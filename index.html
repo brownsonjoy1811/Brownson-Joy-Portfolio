@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Brownson Joy  | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#security">Security</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <!-- <div class="logo">Brownson<span>.</span></div> -->
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <!-- Left Image -->
+    <div class="hero-image">
+      <img src="assets/profile-pic.png" alt="Joy Brownson" />
+    </div>
+
+    <!-- Right Text -->
+    <div class="hero-text">
+        <h1>Hello<br>World!</h1>
+
+
+      <div class="intro">
+        <p>
+        I’m <span>Brownson Joy</span>, a frontend web developer
+        and a coding tutor.
+        </p>
+        <a href="assets/Brownson _ Joy_Coding Tutor_CV.pdf" class="btn" download>Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+
+  <!-- FILTER TABS -->
+  <div class="portfolio-tabs">
+    <button class="tab active" data-filter="all">All</button>
+    <button class="tab" data-filter="web">Web</button>
+    <button class="tab" data-filter="mobile">Mobile</button>
+    <button class="tab" data-filter="desktop">Desktop</button>
+    <button class="tab" data-filter="other">Other</button>
+  </div>
+
+  <!-- PROJECT 1 -->
+  <div class="project" data-category="web"
+       data-title="E-commerce Website"
+       data-desc="Responsive e-commerce frontend built with HTML, CSS, JavaScript, featuring product listing, search, and clean UI."
+       data-tech="HTML, CSS, JavaScript"
+       data-img="assets/projects/ecommerce.png"
+       data-live="https://example.com"
+       data-github="https://github.com/example"
+  >
+    <div class="project-text">
+      <span class="project-label">PROJECT 1</span>
+      <h3>E-commerce Website</h3>
+      <p>Responsive e-commerce frontend built with HTML, CSS, JavaScript, featuring product listing, search, and clean UI.</p>
+      <button class="read-more">Read more →</button>
+    </div>
+
+    <div class="project-image">
+      <img src="assets/projects/ecommerce.png" alt="Ecommerce project">
+    </div>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="project reverse" data-category="web"
+       data-title="React Applications"
+       data-desc="Modern React apps using components, hooks, and API integration."
+       data-tech="React, JavaScript, CSS"
+       data-img="assets/projects/react.png"
+       data-live="#"
+       data-github="#"
+  >
+    <div class="project-text">
+      <span class="project-label">PROJECT 2</span>
+      <h3>React Applications</h3>
+      <p>Modern React apps using components, hooks, and API integration.</p>
+      <button class="read-more">Read more →</button>
+    </div>
+
+    <div class="project-image">
+      <img src="assets/projects/react.png" alt="React project">
+    </div>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="project" data-category="other"
+       data-title="Frontend Mentor Challenges"
+       data-desc="UI challenges solved with pixel-perfect layouts and clean code."
+       data-tech="HTML, CSS, JavaScript"
+       data-img="assets/projects/frontend-mentor.png"
+       data-live="#"
+       data-github="#"
+  >
+    <div class="project-text">
+      <span class="project-label">PROJECT 3</span>
+      <h3>Frontend Mentor Challenges</h3>
+      <p>UI challenges solved with pixel-perfect layouts and clean code.</p>
+      <button class="read-more">Read more →</button>
+    </div>
+
+    <div class="project-image">
+      <img src="assets/projects/frontend-mentor.png" alt="Frontend Mentor">
+    </div>
+  </div>
+
+
+  <!-- Extra Projects (hidden by default) -->
+<div class="project extra-project" data-category="web"
+     data-title="New Project"
+     data-desc="Description of the new project"
+     data-tech="HTML, CSS, JavaScript"
+     data-img="assets/projects/new-project.png"
+     data-live="#"
+     data-github="#"
+>
+  <div class="project-text">
+    <span class="project-label">PROJECT 4</span>
+    <h3>New Project</h3>
+    <p>Description of the new project</p>
+    <button class="read-more">Read more →</button>
+  </div>
+  <div class="project-image">
+    <img src="assets/projects/new-project.png" alt="New Project">
+  </div>
+</div>
+
+<!-- View All Button -->
+<button id="viewAllProjects" class="ViewAllbtn">View All Projects</button>
+
+</section>
+
+
+
+
+
+<!-- <section class="hero">
+  <pre>
+Brownson Joy  {
+  Coding Tutor;
+  Frontend Developer;
+  Security Enthusiast;
+}
+  </pre>
+</section> -->
+
+<!-- ABOUT -->
+<!-- <section id="about">
+  <h2>About Me</h2>
+  <p>
+    I’m a coding tutor and frontend developer with strong experience in
+    HTML, CSS, JavaScript, React, and Python. I enjoy teaching, building
+    real-world projects, and continuously improving my skills across
+    web development and cybersecurity.
+  </p>
+
+  
+</section> -->
+
+<!-- <p>
+        I’m <span>Brownson Joy</span>, a frontend developer and coding tutor
+        with strong experience in
+    HTML, CSS, JavaScript, React, and Python. I enjoy teaching, building
+    real-world projects, and continuously improving my skills across
+    web development and cybersecurity.
+        </p> -->
+        <!-- <pre>
+<span>Brownson Joy</span>  {
+  Coding Tutor;
+  Frontend Developer;
+  Security Enthusiast;
+}
+  </pre> -->
+
+<!-- TECH STACK -->
+<section id="stack">
+  <h2>Tech Stack</h2>
+  <pre>
+Frontend {
+  HTML;
+  CSS;
+  JavaScript;
+  React;
+  jQuery;
+}
+
+Backend & Data {
+  Python;
+  SQL Queries;
+  JSON;
+}
+
+Tools {
+  Git;
+  GitHub;
+}
+  </pre>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+
+  <div class="cards services">
+    <div class="card">
+      <span class="icon"><i class="fa-solid fa-laptop"></i></span>
+      <h3>Coding Tutoring</h3>
+      <p>Beginner to intermediate tutoring in HTML, CSS, JavaScript, React, Python, and SQL.</p>
+    </div>
+
+    <div class="card">
+      <span class="icon">🎨</span>
+      <h3>Frontend Development</h3>
+      <p>Modern, responsive websites using clean and maintainable code.</p>
+    </div>
+
+    <div class="card">
+      <span class="icon"><i class="fa-brands fa-react" style="color: #bd93f9;"></i></span>
+      <h3>React Applications</h3>
+      <p>Component-based apps with API integration and modern UI patterns.</p>
+    </div>
+
+    <div class="card">
+      <span class="icon">📄</span>
+      <h3>Portfolio Websites</h3>
+      <p>Personal portfolios and resume websites for developers and creatives.</p>
+    </div>
+
+    <div class="card">
+      <span class="icon">🐞</span>
+      <h3>Bug Fixing & Review</h3>
+      <p>Debugging frontend issues and improving code quality.</p>
+    </div>
+
+    <div class="card">
+      <span class="icon">🛡️</span>
+      <h3>Security Practice Guidance</h3>
+      <p>Guidance on labs from HackTheBox, TryHackMe, and HackerOne.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience & Practice</h2>
+  <pre>
+Experience {
+  Coding Tutor;
+  Frontend Web Developer;
+}
+
+PracticePlatforms {
+  FrontendMentor;
+  CodePen;
+  Personal Projects;
+}
+  </pre>
+</section>
+
+
+
+
+
+<!-- CYBERSECURITY -->
+<section id="security">
+  <h2>Cybersecurity Practice</h2>
+  <pre>
+Platforms {
+  HackTheBox;
+  TryHackMe;
+  HackerOne;
+}
+
+Focus {
+  Linux;
+  Networking;
+  Web Vulnerabilities;
+}
+  </pre>
+</section>
+
+<!-- CV -->
+<section id="cv">
+  <h2>Curriculum Vitae</h2>
+  <a class="btn" href="assets/Brownson _ Joy_Coding Tutor_CV.pdf" download>Download CV</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/brownson1811@gmail.com" method="POST">
+    <input type="text" name="name" placeholder=" Name" required />
+    <input type="email" name="email" placeholder=" Email" required />
+    <textarea name="message" placeholder="Let's work together...." rows="10" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- SOCIALS -->
+<footer>
+  <a href="https://github.com/brownsonjoy1811" target="_blank">GitHub</a>
+  <a href="https://www.linkedin.com/in/brownson-joy-657b60286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+  <a href="https://x.com/brownson1811?s=09" target="_blank">X</a>
+  <a href="https://www.instagram.com/brownson1811?igsh=MXhhcW0ycG9icml4cg==" target="_blank">Instagram</a>
+  <a href="#">YouTube</a>
+  <a href="#">Discord</a>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp" href="https://wa.me/2347018112570" target="_blank"><i class="fa-brands fa-whatsapp" style="color:#282a36; font-size:40px;"></i></a>
+
+<div class="modal" id="projectModal">
+  <div class="modal-box">
+    <span class="close">&times;</span>
+
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+
+    <div class="tech-stack" id="modalTech"></div>
+
+    <img id="modalImg" />
+
+    <div class="modal-buttons">
+      <a id="modalLive" target="_blank">Live Demo</a>
+      <a id="modalGit" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

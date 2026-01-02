@@ -1,0 +1,405 @@
+:root {
+  --bg: #282a36;
+  --fg: #f8f8f2;
+  --pink: rgb(247, 168, 184);
+  --purple: #bd93f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  BODY  */
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.6;
+}
+
+/*  NAVIGATION  */
+nav {
+  padding: 10px 10%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1e1f29;
+  z-index: 800;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 9px;
+}
+
+nav a {
+  color: var(--fg);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--pink);
+}
+
+.logo span {
+  color: var(--pink);
+}
+
+/*  SECTIONS  */
+section {
+  padding: 60px 10%;
+}
+
+h2 {
+  color: var(--pink);
+  margin-bottom: 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+/*  HERO  */
+.hero-inner {
+  width: 100%;
+  max-width: 1100px;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-image img {
+  width: 300px;
+  flex-shrink: 0;
+  
+}
+
+.hero-text {
+  max-width: 420px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  transform: translateX(-30px);
+}
+
+.hero-text .intro {
+  color: #cfd3dc;
+  font-size: 12px;
+  border-left: 2px solid var(--pink);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text span {
+  color: var(--pink);
+}
+
+.hero-text p {
+  font-size: 12px;
+  color: var(--fg);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/*  BUTTONS  */
+.btn,
+form button {
+  background: var(--pink);
+  color: #000;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.read-more{
+  border: 1px solid var(--pink);
+  background: transparent;
+  color: var(--pink);
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;}
+
+.btn:hover,
+.read-more:hover,
+form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(247,168,184,0.4);
+}
+
+/*  PORTFOLIO  */
+.portfolio-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.tab {
+  background: #1e1f29;
+  color: var(--fg);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab.active,
+.tab:hover {
+  background: var(--pink);
+  color: #000;
+}
+
+/* PROJECTS */
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.project.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-text {
+  max-width: 500px;
+}
+
+.project-label {
+  color: #6272a4;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.project-text h3 {
+  color: var(--pink);
+  margin: 15px 0;
+}
+
+.project-text p {
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.extra-project {
+  display: none;
+}
+
+.ViewAllbtn{
+  background: none; 
+  border: none; 
+  color: #6272a4; 
+  cursor: pointer;
+  font-size: 19px;
+  text-decoration: underline;
+}
+
+
+
+/*  MODAL  */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #121425;
+  padding: 30px;
+  border-radius: 18px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+}
+
+.modal img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.tech-stack span {
+  background: #1e223f;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.modal-buttons a {
+  margin-right: 12px;
+  color: var(--pink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  color: var(--pink);
+}
+
+/*  SERVICES  */
+.services .card {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(255, 121, 198, 0.2);
+}
+
+.services .icon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.services h3 {
+  color: var(--pink);
+  margin-bottom: 10px;
+}
+
+.services p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/*  CARDS GRID  */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e1f29;
+  padding: 20px;
+  border-left: 4px solid var(--pink);
+}
+
+/*  FORM  */
+form {
+  max-width: 500px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #1e1f29;
+  border: none;
+  color: var(--fg);
+  outline-color: var(--pink);
+}
+
+/*  FOOTER  */
+footer {
+  padding: 30px;
+  text-align: center;
+}
+
+footer a {
+  margin: 0 10px;
+  color: var(--fg);
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: var(--pink);
+}
+
+/*  WHATSAPP FLOAT  */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--pink);
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #000;
+}
+
+/*  MEDIA QUERIES  */
+@media (max-width: 900px) {
+  .project,
+  .project.reverse {
+    flex-direction: column;
+  }
+
+  .project-image img {
+    max-width: 100%;
+  }
+  .hero-text h1{
+    transform: translateX(-20px);
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav a, footer a {
+    font-size: 12px;
+  }
+  section, nav {
+    padding: 10px 5%;
+  }
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  .hero-image img {
+    width: 200px;
+  }
+  .hero-text .intro {
+    font-size: 10px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-image img {
+    width: 140px;
+  }
+  .portfolio-tabs {
+    
+    gap: 10px;
+  }
+}
