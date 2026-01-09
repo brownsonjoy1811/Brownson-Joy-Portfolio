@@ -201,8 +201,8 @@ form button:hover {
 }
 
 .project-image img {
-  width: 100%;
-  max-width: 380px;
+  width: 80%;
+  max-width: 300px;
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
@@ -403,3 +403,4 @@ footer a:hover {
     gap: 10px;
   }
 }
+
