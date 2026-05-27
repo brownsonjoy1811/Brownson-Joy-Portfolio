@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brownies | Frontend Developer & Coding Tutor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- SCAN LINE OVERLAY -->
+<div class="scanlines" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>brownies<span class="logo-cursor">_</span><span class="logo-bracket">]</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"><span class="nav-num">01.</span> about</a></li>
+      <li><a href="#client-work"><span class="nav-num">02.</span> client_work</a></li>
+      <li><a href="#projects"><span class="nav-num">03.</span> projects</a></li>
+      <li><a href="#practice"><span class="nav-num">04.</span> practice</a></li>
+      <li><a href="#services"><span class="nav-num">05.</span> services</a></li>
+      <li><a href="#contact"><span class="nav-num">06.</span> contact</a></li>
+      <li>
+        <span class="status-badge">
+          <span class="status-dot"></span>
+          available_for_work
+        </span>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-content">
+
+    <div class="hero-left">
+      <div class="hero-tag">// frontend developer + coding tutor</div>
+
+      <h1 class="hero-name">
+        <span class="name-hi">Hello, World</span><br>
+        I'm <span class="name-accent">Brownies</span><span class="blink-cursor">|</span>
+      </h1>
+
+      <div class="hero-typewriter-wrap">
+        <span class="tw-prefix">$ </span><span id="typewriter" class="tw-text"></span><span class="tw-cursor">▋</span>
+      </div>
+
+      <p class="hero-desc">
+        Building fast, clean, and responsive web experiences.<br>
+        Based in <span class="accent">Lagos, Nigeria</span> — working globally.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#client-work" class="btn-primary">
+          <i class="fa-solid fa-terminal"></i> view_my_work()
+        </a>
+        <a href="assets/Brownson_Joy_CV.pdf" class="btn-secondary" download>
+          <i class="fa-solid fa-download"></i> download_cv
+        </a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/brownsonjoy1811" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/brownson-joy-657b60286" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/brownson1811" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/brownson1811" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/2347018112570" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="code-card">
+        <div class="code-card-header">
+          <div class="code-dots">
+            <span style="background:#ff5f57"></span>
+            <span style="background:#febc2e"></span>
+            <span style="background:#28c840"></span>
+          </div>
+          <span class="code-filename">brownies.js</span>
+        </div>
+        <pre class="code-block"><span class="ck">const</span> <span class="cv">brownies</span> = {
+  <span class="ck">name</span>: <span class="cs">"Brownson Joy"</span>,
+  <span class="ck">alias</span>: <span class="cs">"Brownies"</span>,
+  <span class="ck">role</span>: [
+    <span class="cs">"Frontend Developer"</span>,
+    <span class="cs">"Coding Tutor"</span>,
+    <span class="cs">"Security Enthusiast"</span>
+  ],
+  <span class="ck">location</span>: <span class="cs">"Lagos, Nigeria"</span>,
+  <span class="ck">available</span>: <span class="cb">true</span>,
+  <span class="ck">stack</span>: {
+    <span class="ck">frontend</span>: [<span class="cs">"HTML"</span>, <span class="cs">"CSS"</span>, <span class="cs">"JS"</span>, <span class="cs">"React"</span>],
+    <span class="ck">backend</span>: [<span class="cs">"Python"</span>, <span class="cs">"SQL"</span>],
+    <span class="ck">tools</span>: [<span class="cs">"Git"</span>, <span class="cs">"GitHub"</span>]
+  }
+<span class="cp">}</span></pre>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>scroll_down</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title"><span class="comment">// </span>about_me</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm <span class="accent">Brownies</span> — a frontend web developer and coding tutor based in
+          Lagos, Nigeria. I build clean, responsive interfaces and help other
+          developers level up their skills.
+        </p>
+        <p>
+          I've been hacking on the web since I wrote my first HTML file and never
+          looked back. I care deeply about readable code, pixel-perfect design, and
+          making the web accessible to everyone.
+        </p>
+        <p>
+          When I'm not shipping code, I'm deep in cybersecurity labs on HackTheBox
+          and TryHackMe — breaking things so I can build them stronger.
+        </p>
+        <a href="assets/Brownson_Joy_CV.pdf" class="btn-primary" download>
+          <i class="fa-solid fa-file-arrow-down"></i> download_cv
+        </a>
+      </div>
+
+      <div class="about-stack">
+        <div class="stack-block">
+          <div class="stack-block-header">
+            <i class="fa-solid fa-code"></i> frontend {}
+          </div>
+          <div class="stack-items">
+            <span><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span><i class="fa-brands fa-react"></i> React</span>
+            <span><i class="fa-brands fa-jquery"></i> jQuery</span>
+          </div>
+        </div>
+        <div class="stack-block">
+          <div class="stack-block-header">
+            <i class="fa-solid fa-server"></i> backend_and_data {}
+          </div>
+          <div class="stack-items">
+            <span><i class="fa-brands fa-python"></i> Python</span>
+            <span><i class="fa-solid fa-database"></i> SQL</span>
+            <span><i class="fa-solid fa-brackets-curly"></i> JSON</span>
+          </div>
+        </div>
+        <div class="stack-block">
+          <div class="stack-block-header">
+            <i class="fa-solid fa-wrench"></i> tools {}
+          </div>
+          <div class="stack-items">
+            <span><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span><i class="fa-brands fa-github"></i> GitHub</span>
+            <span><i class="fa-solid fa-terminal"></i> CLI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT WORK -->
+<section id="client-work" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title"><span class="comment">// </span>client_work</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="section-subtitle">Real sites. Real clients. Live on the internet.</p>
+
+    <div class="project-grid">
+
+      <!-- CLIENT 1 -->
+      <div class="project-card" data-category="web">
+        <div class="card-browser-bar">
+          <div class="browser-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="browser-url">
+            <i class="fa-solid fa-lock" style="font-size:9px; color:#28c840"></i>
+            nadisbestcomputers.com
+          </div>
+          <span class="live-badge"><span class="live-dot"></span>live</span>
+        </div>
+        <div class="card-preview">
+          <img src="assets/ecommerce.png" alt="Nadi's Best Computers website preview" loading="lazy" />
+          <div class="card-overlay">
+            <a href="https://www.nadisbestcomputers.com/" target="_blank" class="overlay-visit">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> visit_site
+            </a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-type"><i class="fa-solid fa-briefcase"></i> client project</span>
+            <span class="card-year">2024</span>
+          </div>
+          <h3 class="card-title">Nadi's Best Computers</h3>
+          <p class="card-desc">Full e-commerce frontend for a computer hardware retailer. Product listing, search, responsive layout.</p>
+          <div class="card-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="card-actions">
+            <a href="https://www.nadisbestcomputers.com/" target="_blank" class="btn-live">
+              <span class="live-dot"></span> visit_site
+            </a>
+            <a href="https://github.com/brownsonjoy1811" target="_blank" class="btn-code">
+              <i class="fa-brands fa-github"></i> code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLACEHOLDER — add more client sites here -->
+      <div class="project-card card-placeholder">
+        <div class="placeholder-inner">
+          <i class="fa-solid fa-plus"></i>
+          <p>more client work<br><span>coming soon</span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title"><span class="comment">// </span>personal_projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="section-subtitle">Things I built for fun, for learning, and for showing off.</p>
+
+    <div class="project-grid">
+
+      <!-- REACT APPS -->
+      <div class="project-card" data-category="web">
+        <div class="card-browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">brownies / react-apps</div>
+          <span class="wip-badge">in progress</span>
+        </div>
+        <div class="card-preview no-img">
+          <div class="preview-code-bg">
+            <span class="ck">import</span> React <span class="ck">from</span> <span class="cs">'react'</span>;<br>
+            <span class="ck">const</span> <span class="cv">App</span> = () <span class="ck">=&gt;</span> (<br>
+            &nbsp;&nbsp;<span class="cp">&lt;div</span> <span class="ck">className</span>=<span class="cs">"app"</span><span class="cp">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="cp">&lt;h1&gt;</span>Hello World<span class="cp">&lt;/h1&gt;</span><br>
+            &nbsp;&nbsp;<span class="cp">&lt;/div&gt;</span><br>
+            );
+          </div>
+          <div class="card-overlay">
+            <a href="https://github.com/brownsonjoy1811" target="_blank" class="overlay-visit">
+              <i class="fa-brands fa-github"></i> view_code
+            </a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-type"><i class="fa-solid fa-user"></i> personal</span>
+          </div>
+          <h3 class="card-title">React Applications</h3>
+          <p class="card-desc">Component-based apps using React hooks, state management, and REST API integration.</p>
+          <div class="card-tags">
+            <span>React</span><span>JavaScript</span><span>CSS</span><span>API</span>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/brownsonjoy1811" target="_blank" class="btn-code full-width">
+              <i class="fa-brands fa-github"></i> view_on_github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- THIS PORTFOLIO -->
+      <div class="project-card" data-category="web">
+        <div class="card-browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">brownies.dev / portfolio</div>
+          <span class="live-badge"><span class="live-dot"></span>live</span>
+        </div>
+        <div class="card-preview no-img">
+          <div class="preview-code-bg" style="font-size:10px;">
+            <span class="cv">theme</span>: <span class="cs">"dracula_hacker"</span>,<br>
+            <span class="cv">fonts</span>: [<span class="cs">"JetBrains Mono"</span>],<br>
+            <span class="cv">vibe</span>: <span class="cs">"terminal_core"</span>,<br>
+            <span class="cv">built_with</span>: <span class="cs">"HTML+CSS+JS"</span>,<br>
+            <span class="cv">animations</span>: <span class="cb">true</span>,<br>
+            <span class="cv">mobile_ready</span>: <span class="cb">true</span>
+          </div>
+          <div class="card-overlay">
+            <a href="#hero" class="overlay-visit">
+              <i class="fa-solid fa-eye"></i> you're_here
+            </a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-type"><i class="fa-solid fa-user"></i> personal</span>
+          </div>
+          <h3 class="card-title">This Portfolio</h3>
+          <p class="card-desc">Custom-built developer portfolio with typing animation, live project cards, and hacker aesthetic.</p>
+          <div class="card-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/brownsonjoy1811" target="_blank" class="btn-code full-width">
+              <i class="fa-brands fa-github"></i> view_source
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE WORK -->
+<section id="practice" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title"><span class="comment">// </span>practice_work</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="section-subtitle">Sharpening skills through challenges and structured exercises.</p>
+
+    <div class="practice-grid">
+
+      <div class="practice-card">
+        <div class="practice-icon"><i class="fa-solid fa-trophy"></i></div>
+        <div class="practice-content">
+          <h3>Frontend Mentor</h3>
+          <p>Pixel-perfect UI challenges — building real components from professional designs.</p>
+          <div class="card-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+          <a href="https://github.com/brownsonjoy1811" target="_blank" class="btn-code">
+            <i class="fa-brands fa-github"></i> view_solutions
+          </a>
+        </div>
+      </div>
+
+      <div class="practice-card">
+        <div class="practice-icon"><i class="fa-solid fa-pen-nib"></i></div>
+        <div class="practice-content">
+          <h3>CodePen Experiments</h3>
+          <p>CSS animations, micro-interactions, and creative UI experiments.</p>
+          <div class="card-tags">
+            <span>CSS</span><span>Animation</span><span>HTML</span>
+          </div>
+          <a href="#" target="_blank" class="btn-code">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> view_pens
+          </a>
+        </div>
+      </div>
+
+      <div class="practice-card">
+        <div class="practice-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="practice-content">
+          <h3>Cybersecurity Labs</h3>
+          <p>Active learner on HackTheBox, TryHackMe, and HackerOne — focusing on web vulnerabilities and Linux fundamentals.</p>
+          <div class="card-tags">
+            <span>Linux</span><span>Networking</span><span>Web Vulns</span>
+          </div>
+          <a href="#security" class="btn-code">
+            <i class="fa-solid fa-terminal"></i> see_security
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title"><span class="comment">// </span>services</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Coding Tutoring</h3>
+        <pre class="service-code">teach(<span class="cs">"HTML"</span>, <span class="cs">"CSS"</span>,
+  <span class="cs">"JavaScript"</span>, <span class="cs">"React"</span>,
+  <span class="cs">"Python"</span>, <span class="cs">"SQL"</span>);</pre>
+        <p>Beginner to intermediate. 1-on-1 or group sessions. Practical, project-based learning.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+        <h3>Frontend Development</h3>
+        <pre class="service-code">build(<span class="cs">"responsive"</span>,
+  <span class="cs">"accessible"</span>,
+  <span class="cs">"performant"</span>);</pre>
+        <p>Modern, responsive websites built clean and fast. From landing pages to full web apps.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-brands fa-react"></i></div>
+        <h3>React Applications</h3>
+        <pre class="service-code">compose(<span class="cs">"components"</span>,
+  <span class="cs">"hooks"</span>,
+  <span class="cs">"REST APIs"</span>);</pre>
+        <p>Component-based architecture, hooks, state management, and API integration.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-id-card"></i></div>
+        <h3>Portfolio Websites</h3>
+        <pre class="service-code">deploy(<span class="cs">"your_brand"</span>,
+  <span class="cs">"online"</span>);</pre>
+        <p>Personal portfolios and resume sites for developers, designers, and creatives.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-bug-slash"></i></div>
+        <h3>Bug Fixing & Review</h3>
+        <pre class="service-code"><span class="ck">catch</span>(bug) {
+  fix(bug);
+  <span class="ck">return</span> <span class="cb">clean_code</span>;
+}</pre>
+        <p>Debugging frontend issues, code review, and quality improvements.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Security Guidance</h3>
+        <pre class="service-code">guide([<span class="cs">"HackTheBox"</span>,
+  <span class="cs">"TryHackMe"</span>,
+  <span class="cs">"HackerOne"</span>]);</pre>
+        <p>Walkthrough assistance for cybersecurity labs and practice platforms.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CYBERSECURITY -->
+<section id="security" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">──</span>
+      <h2 class="section-title"><span class="comment">// </span>security_practice</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="security-grid">
+      <div class="sec-platform">
+        <div class="sec-platform-header">
+          <i class="fa-solid fa-cube"></i>
+          <span>HackTheBox</span>
+          <span class="live-badge"><span class="live-dot"></span>active</span>
+        </div>
+        <pre class="sec-code">focus: [
+  <span class="cs">"Linux privilege escalation"</span>,
+  <span class="cs">"Web enumeration"</span>,
+  <span class="cs">"CTF challenges"</span>
+]</pre>
+      </div>
+      <div class="sec-platform">
+        <div class="sec-platform-header">
+          <i class="fa-solid fa-skull"></i>
+          <span>TryHackMe</span>
+          <span class="live-badge"><span class="live-dot"></span>active</span>
+        </div>
+        <pre class="sec-code">focus: [
+  <span class="cs">"Networking fundamentals"</span>,
+  <span class="cs">"OWASP Top 10"</span>,
+  <span class="cs">"Guided learning paths"</span>
+]</pre>
+      </div>
+      <div class="sec-platform">
+        <div class="sec-platform-header">
+          <i class="fa-solid fa-bug"></i>
+          <span>HackerOne</span>
+          <span class="live-badge"><span class="live-dot"></span>learning</span>
+        </div>
+        <pre class="sec-code">focus: [
+  <span class="cs">"Bug bounty basics"</span>,
+  <span class="cs">"Web vulnerabilities"</span>,
+  <span class="cs">"Responsible disclosure"</span>
+]</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2 class="section-title"><span class="comment">// </span>contact</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <p class="contact-lead">
+          Let's build something together.<br>
+          <span class="accent">I'm open to freelance projects, tutoring, and collaborations.</span>
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:brownson1811@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            brownson1811@gmail.com
+          </a>
+          <a href="https://wa.me/2347018112570" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            +234 701 811 2570
+          </a>
+          <a href="https://github.com/brownsonjoy1811" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            github.com/brownsonjoy1811
+          </a>
+          <a href="https://www.linkedin.com/in/brownson-joy-657b60286" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            linkedin.com/in/brownson-joy
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" action="https://formsubmit.co/brownson1811@gmail.com" method="POST">
+        <div class="form-group">
+          <label for="name"><span class="comment">// </span>your_name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="email"><span class="comment">// </span>your_email</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message"><span class="comment">// </span>message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Hey Brownies, I want to..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">
+          <i class="fa-solid fa-paper-plane"></i> send_message()
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span class="logo-bracket">[</span>brownies<span class="logo-cursor">_</span><span class="logo-bracket">]</span>
+    </div>
+    <p class="footer-copy">
+      <span class="comment">// </span>designed &amp; built by <span class="accent">Brownson Joy</span> · Lagos, Nigeria
+    </p>
+    <div class="footer-socials">
+      <a href="https://github.com/brownsonjoy1811" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/brownson-joy-657b60286" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://x.com/brownson1811" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/brownson1811" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float" href="https://wa.me/2347018112570" target="_blank" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
