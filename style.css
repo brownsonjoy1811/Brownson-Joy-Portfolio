@@ -9,7 +9,8 @@
   --fg:        #e2e4f0;
   --fg2:       #8b8fa8;
   --fg3:       #5a5d72;
-  --pink:     rgb(247, 168, 184);
+  /* --pink:     rgb(247, 168, 184); */
+  --pink: #D7A15C ;
   --green:     #50fa7b;
   --cyan:      #8be9fd;
   --purple:    #bd93f9;
